@@ -127,7 +127,9 @@ img{
     color:#A66BFF;
 }
 #ed,#projects{
-    padding:60px 10%; 
+    height:auto;
+    padding:50px 10%;
+    min-height:0;
     color:#A66BFF;
     margin-bottom: 25px;
 }
