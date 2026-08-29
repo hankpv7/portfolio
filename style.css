@@ -99,7 +99,7 @@ img{
     margin:25px;
 }
 #about,#skills{
-    padding: 60px 10%;
+    padding: 60px 40px;
     color:#A66BFF;
 }
 #about p{
@@ -128,7 +128,7 @@ img{
 }
 #ed,#projects{
     height:auto;
-    padding:50px 10%;
+    padding:50px 40px;
     min-height:0;
     color:#A66BFF;
     margin-bottom: 25px;
@@ -176,32 +176,42 @@ img{
 }
 #contact{
     align-self:start;
-    padding:30px 10%;
+    padding:40px 40px;
     border:1px solid #24252D;
     border-radius:10px;
     margin: 25px;
-    width:100%;
-    min-height:150px;
+    background:#101116;
     height:fit-content;
 }
 #contact h2{
     color: #A66BFF;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 #contact p{
     color: #A7A7B0;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+}
+.contact-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
 }
 #contact a{
-    display:flex;
-    flex-direction: column;
-    margin-bottom: 6px;
-    margin-right: 12px;
+    display:inline-flex;
+    align-items:center;
+    padding:10px 20px;
+    border:1px solid #8B4DFF;
+    border-radius:7px;
     color: #F5F5F5;
     text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+#contact a:first-of-type{
+    background:#8B4DFF;
 }
 #contact a:hover{
-    color: #A66BFF;
+    background:#A66BFF;
+    color:#050506;
 }
 footer{
     padding: 25px;
@@ -241,7 +251,7 @@ footer{
 
     #about,
     #skills,
-    #education,
+    #ed,
     #projects,
     #contact {
         padding: 50px 5%;
@@ -293,7 +303,8 @@ body.light-theme .content-grid p {
 
 body.light-theme .skill,
 body.light-theme .project-card,
-body.light-theme .ed-items-c {
+body.light-theme .ed-items-c,
+body.light-theme #contact {
     background: #F5F5F5;
     border-color: #DCDCDC;
     color: #222222;
