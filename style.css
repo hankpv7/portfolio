@@ -175,10 +175,14 @@ img{
     border-color: #8B4DFF;
 }
 #contact{
+    align-self:start;
     padding:30px 10%;
     border:1px solid #24252D;
     border-radius:10px;
     margin: 25px;
+    width:100%;
+    min-height:150px;
+    height:fit-content;
 }
 #contact h2{
     color: #A66BFF;
